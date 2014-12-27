@@ -1,0 +1,16 @@
+{
+    "name": "Gluin Gateway for Arduino new",
+    "type": "privileged",
+    "description": "This gateway Application connect Gluin to Arduino via Xbee Wi-Fi",
+    "launch_path": "/main.html",
+    "developer": {
+        "name": "Shohei Toyota",
+        "url": ""
+    },
+    "orientation": "portrait-primary",
+    "permissions": {
+        "tcp-socket": {
+            "description": "Required for Xbee Wi-Fi"
+        }
+    }
+}
