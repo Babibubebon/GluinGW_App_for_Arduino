@@ -46,12 +46,11 @@ $(document).ready(function(){
         var host = $('#Xbee_IP').val();
         var port = $('#Xbee_port').val();
         myXbee.setHost(host, port);
-        var val = myArduino.analogRead(0);
-        if(val){
+        myArduino.analogRead(0).then(function(){
             alert('OK');
-        }else{
+        },function(){
             alert('ERROR');
-        }
+        });
     });
     
     //	Pill Nav Bar Conrol
